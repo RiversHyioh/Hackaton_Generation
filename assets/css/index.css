@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'CosmicOcto';
+    src: url('../fonts/Cosmic/cosmic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('../fonts/tt_octosquares/TT Octosquares Trial Regular.ttf') format('truetype');
+}
+
+:root {
+    --fuente-1: 'CosmicOcto', Arial, sans-serif;
+    --fuente-2: 'TTOctosquares', Arial, sans-serif;
+}
+
+body {
+    background: url("assets/img/Background-Desktop.svg") no-repeat center center fixed;
+    background-size: cover;
+}
