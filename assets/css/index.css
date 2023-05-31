@@ -19,8 +19,12 @@ html{
 
 body {
     background: url("../img/Background-Desktop.jpeg") no-repeat;
+	background-size: cover;
 }
-
+a{
+	text-decoration: none;
+	color: white;
+}
 
 h1, h2{
     color: white;
@@ -36,12 +40,20 @@ h1{
 h2{
     font-family: var(--fuente-2);
     top: 10vh;
+	right: 10vw;
     font-size: 100px;
+}
+img{
+	position: relative;
+	left: 80vw;
+	top: 9vh;
+	width: 8vw;
+	height: 10vh;
 }
 
 .container {
 	position: absolute;
-	left: 48%;
+	left: 16vw;
 	top: 45%;
 	transform: translate(-50%,-50%);
 	padding: 10px;
@@ -49,7 +61,7 @@ h2{
 
 .rectangulo {
 	position: absolute;
-	top: 80px;
+	top: 31vh;
 	outline: none;
 	box-sizing: border-box;
 	height: 8vh;
@@ -58,23 +70,20 @@ h2{
 	color: white;
     font-family: var(--fuente-2);
 	border-radius: 50px;
+	padding-top: 12px;
     background-color: #FF0F7B;
 	transition: all .7s ease;
+	display: flex;
+	justify-content: center;
     text-align: center;
+	font-weight: 600;
 }
 
-/* This CSS code is styling a button element with the class "btn". It sets the position of the button
-to be absolute, with the top-right corner of the button at the top-right corner of its parent
-element. It also sets the width and height of the button to be 10% of the viewport height, and sets
-the background color to white. The line-height property is used to vertically center the content of
-the button, and the border-radius property creates a circular shape for the button. The text-align
-property centers the content horizontally within the button. The cursor property sets the mouse
-cursor to a pointer when hovering over the button. Finally, the transition property sets the
-duration and easing function for any CSS transitions applied to the button. */
 .btn {
 	position: absolute;
 	right: 0px;
-	top: 80px;
+	left: 0px;
+	top: 30vh;
 	width: 10vh;
 	height: 10vh;
 	background: white;
@@ -87,9 +96,13 @@ duration and easing function for any CSS transitions applied to the button. */
 
 
 .container:hover .rectangulo {
-	width: 350px;
+	display: block;
+	width: 280px;
+
+	
 }
 
 .btn:hover{
-	background: #FF0F7B;
+	background: white;
+	transition: all .7s ease;
 }
