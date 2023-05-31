@@ -12,15 +12,20 @@
     --fuente-1: 'CosmicOcto', Arial, sans-serif;
     --fuente-2: 'TTOctosquares', Arial, sans-serif;
 }
+html{
+	margin: 0;
+	padding: 0;
+}
 
 body {
-    background: url("../img/Background-Desktop.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    background: url("../img/Background-Desktop.jpeg") no-repeat;
 }
+
+
 h1, h2{
     color: white;
     position: absolute;
-    left: 25vw;
+    left: 15vw;
 }
 
 h1{
@@ -42,30 +47,37 @@ h2{
 	padding: 10px;
 }
 
-input {
+.rectangulo {
+	position: absolute;
+	top: 80px;
 	outline: none;
 	box-sizing: border-box;
-	height: 60px;
-	width: 0px;
+	height: 8vh;
+	width: 0;
 	padding: 0 20px;
-	color: #000;
+	color: white;
+    font-family: var(--fuente-2);
 	border-radius: 50px;
-	font-size: 20px;
-	border: 1px solid #FF0F7B;
+    background-color: #FF0F7B;
 	transition: all .7s ease;
+    text-align: center;
 }
 
-::placeholder {
-	color: grey;
-}
-
+/* This CSS code is styling a button element with the class "btn". It sets the position of the button
+to be absolute, with the top-right corner of the button at the top-right corner of its parent
+element. It also sets the width and height of the button to be 10% of the viewport height, and sets
+the background color to white. The line-height property is used to vertically center the content of
+the button, and the border-radius property creates a circular shape for the button. The text-align
+property centers the content horizontally within the button. The cursor property sets the mouse
+cursor to a pointer when hovering over the button. Finally, the transition property sets the
+duration and easing function for any CSS transitions applied to the button. */
 .btn {
 	position: absolute;
 	right: 0px;
-	top: 0px;
-	width: 80px;
-	height: 80px;
-	background: #FF0F7B;
+	top: 80px;
+	width: 10vh;
+	height: 10vh;
+	background: white;
 	line-height: 80px;
 	border-radius: 50%;
 	text-align: center;
@@ -73,19 +85,9 @@ input {
 	transition: .5s;
 }
 
-.btn i {
-	font-size: 25px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
-}
 
-.container:hover input {
+.container:hover .rectangulo {
 	width: 350px;
-}
-
-.container:hover i{
-	transform: rotate(-360deg);
 }
 
 .btn:hover{
