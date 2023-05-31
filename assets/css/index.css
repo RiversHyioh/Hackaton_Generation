@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'CosmicOcto';
+    src: url('../fonts/Cosmic/cosmic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('../fonts/tt_octosquares/TT Octosquares Trial Regular.ttf') format('truetype');
+}
+
+:root {
+    --fuente-1: 'CosmicOcto', Arial, sans-serif;
+    --fuente-2: 'TTOctosquares', Arial, sans-serif;
+}
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: url("../img/Background-Desktop.jpeg") no-repeat;
+}
+
+
+h1, h2{
+    color: white;
+    position: absolute;
+    left: 15vw;
+}
+
+h1{
+    font-family: var(--fuente-1);
+    top: 10vh;
+}
+
+h2{
+    font-family: var(--fuente-2);
+    top: 10vh;
+    font-size: 100px;
+}
+
+.container {
+	position: absolute;
+	left: 48%;
+	top: 45%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+}
+
+.rectangulo {
+	position: absolute;
+	top: 80px;
+	outline: none;
+	box-sizing: border-box;
+	height: 8vh;
+	width: 0;
+	padding: 0 20px;
+	color: white;
+    font-family: var(--fuente-2);
+	border-radius: 50px;
+    background-color: #FF0F7B;
+	transition: all .7s ease;
+    text-align: center;
+}
+
+/* This CSS code is styling a button element with the class "btn". It sets the position of the button
+to be absolute, with the top-right corner of the button at the top-right corner of its parent
+element. It also sets the width and height of the button to be 10% of the viewport height, and sets
+the background color to white. The line-height property is used to vertically center the content of
+the button, and the border-radius property creates a circular shape for the button. The text-align
+property centers the content horizontally within the button. The cursor property sets the mouse
+cursor to a pointer when hovering over the button. Finally, the transition property sets the
+duration and easing function for any CSS transitions applied to the button. */
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	width: 10vh;
+	height: 10vh;
+	background: white;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+.container:hover .rectangulo {
+	width: 350px;
+}
+
+.btn:hover{
+	background: #FF0F7B;
+}
